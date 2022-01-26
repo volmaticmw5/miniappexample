@@ -1,7 +1,7 @@
 ## Deployment
 
 # Download Repo
-# run `npm install` and `npm run prod` to install dependencies and "compile" resources
+run `npm install` and `npm run prod` to install dependencies and "compile" resources
 
 ## Configuration
 
