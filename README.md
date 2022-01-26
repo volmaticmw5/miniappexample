@@ -1,7 +1,9 @@
 ## Deployment
 
 # Download Repo
-run `npm install` and `npm run prod` to install dependencies and "compile" resources
+run `npm install` and `composer update` to install dependencies
+
+run `npm run prod` to generate public resources
 
 ## Configuration
 
