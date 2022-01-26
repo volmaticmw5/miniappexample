@@ -1,0 +1,56 @@
+.navbar-green-overwride
+{
+    background-color: $base-color !important;
+    color: white;
+}
+
+.navbar-green-overwride a 
+{
+    color:white;
+    transition:.4s;
+}
+
+.navbar-green-overwride a:hover
+{
+    color:$active-color;
+    transition:.4s;
+}
+
+.navbar-toggler
+{
+    color:$active-color;
+}
+
+.navbar-toggler-icon
+{
+    color:white;
+}
+
+.navbar-toggler-icon.icon-bar{ 
+    background-color: white !important; 
+}
+
+.logout
+{
+    color:rgb(255, 196, 196) !important;
+    font-weight:600;
+    transition:.4s;
+}
+
+.logout i
+{
+    color:rgb(255, 116, 116);
+    font-size:1.4em;
+    vertical-align: middle;
+}
+
+.logout:hover
+{
+    color:rgb(255, 121, 121) !important;
+    transition:.4s;
+}
+
+.active
+{
+    border-bottom: 1px solid white;
+}
