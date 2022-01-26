@@ -1,0 +1,17 @@
+[
+    {
+        "name": "John",
+        "age": 24,
+        "username": "johndoe22"
+    },
+    {
+        "name": "Richard Clift",
+        "age": 47,
+        "username": "richclift"
+    },
+    {
+        "name": "Joseph Twin",
+        "age": 35,
+        "username": "jjtwin"
+    }
+]

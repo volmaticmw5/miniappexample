@@ -7,6 +7,10 @@ run `npm install` and `npm run prod` to install dependencies and "compile" resou
 
 A few files have to be configured for this app to run correctly, there are:
 
-webpack.mix.js > Replace mix.setResourceRoot contents with your project public directory path
+`webpack.mix.js` > Replace mix.setResourceRoot contents with your project public directory path
 
-resources/js/app.js > Replace baseUri with your project public directory path
+`resources/js/app.js` > Replace baseUri with your project public directory path
+
+## Info
+
+A list of valid username and password combinations can be found in `storage/app/users.json`

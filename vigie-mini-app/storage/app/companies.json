@@ -1,0 +1,32 @@
+[
+    {
+        "company_name": "Alfreds Fulterkiste",
+        "contact": "Maria Anders",
+        "country": "Germany"
+    },
+    {
+        "company_name": "Centro comercial Mootezuma",
+        "contact": "Francisco Cheng",
+        "country": "Mexico"
+    },
+    {
+        "company_name": "Emat Handel",
+        "contact": "Roland Mendel",
+        "country": "Austria"
+    },
+    {
+        "company_name": "Island Trading",
+        "contact": "Helen Bennett",
+        "country": "UK"
+    },
+    {
+        "company_name": "Laughing Bacchus Winecellars",
+        "contact": "Yoshi Tannamuri",
+        "country": "Canada"
+    },
+    {
+        "company_name": "Magazzini Alimentari Riunti",
+        "contact": "Giovanni Rolveli",
+        "country": "Italy"
+    }
+]
