@@ -2,9 +2,6 @@ require('./jquery_ext');
 import { RandomBootstrapColors } from './color';
 window.$ = window.jQuery = require('jquery');
 
-// CHANGE THIS TO YOUR URL
-const baseUri = "http://localhost/vigie-mini-app/vigie-mini-app/public/api";
-
 // Button color change
 const rbc = new RandomBootstrapColors();
 $('#changeColorBtn').on('click', function() {
@@ -22,8 +19,10 @@ $('#addBtn').on('click', function(){
     $('#dynamicBtnHolder').html('Loading...');
 
     // Send an ajax request and display the result on this button
+    const url = window.location;
+    const subdirs = url.pathname.split('/');
     $.ajax({
-        url: baseUri + '/GetNewTextForDynBtn',
+        url: url.protocol + '//' + url.host + '/' + subdirs[1] + '/public/api/GetNewTextForDynBtn',
         type: 'get',
         success: function(response) {
             $('#dynamicBtnHolder').empty();
