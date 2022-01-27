@@ -21,7 +21,6 @@ $('#changeColorBtn').on('click', function () {
   $(this).addClass('btn-' + rbc.getNewColorClass());
 }); // Button that adds another button
 
-$('#addBtn').html('Add button');
 $('#addBtn').on('click', function () {
   // Change the text of the 'adder' button
   $('#addBtn').html('Refresh button'); // Empty the inner html of the dynamic button and put a dummy text while we don't get a response from our ajax request
@@ -40,7 +39,7 @@ $('#addBtn').on('click', function () {
   });
 }); // Fake form
 
-$('#fakeForm').submit(function (event) {
+$('#dashForm').submit(function (event) {
   // Prevent default submit behaviour
   event.preventDefault(); // Log the stuff
 
@@ -65,7 +64,7 @@ $('#productForm').submit(function (event) {
 $('#userForm').submit(function (event) {
   // Prevent default submit behaviour
   event.preventDefault();
-  var usersTable = $('#usersTable');
+  var usersTable = $('#tBody');
   var newName = $('#userFormName').val();
   var newAge = $('#userFormAge').val();
   var newUsername = "add_to_dom"; // Add the entry to the table
@@ -83,7 +82,7 @@ $('#userForm').submit(function (event) {
 $(document).on('click', 'tr', function () {
   // Get the textarea target and clear it if we find it
   var textarea = $('#compSix');
-  if (textarea === 'undefined') return;
+  if (!textarea.length) return;
   textarea.empty(); // Loop through our TR children and add their inner texts to the textarea
 
   $(this).children().each(function () {

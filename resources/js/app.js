@@ -10,7 +10,6 @@ $('#changeColorBtn').on('click', function() {
 });
 
 // Button that adds another button
-$('#addBtn').html('Add button');
 $('#addBtn').on('click', function(){
     // Change the text of the 'adder' button
     $('#addBtn').html('Refresh button');
@@ -34,7 +33,7 @@ $('#addBtn').on('click', function(){
 });
 
 // Fake form
-$('#fakeForm').submit(function(event){
+$('#dashForm').submit(function(event){
     // Prevent default submit behaviour
     event.preventDefault();
 
@@ -67,7 +66,7 @@ $('#userForm').submit(function(event){
     // Prevent default submit behaviour
     event.preventDefault();
 
-    const usersTable = $('#usersTable');
+    const usersTable = $('#tBody');
     const newName = $('#userFormName').val();
     const newAge = $('#userFormAge').val();
     const newUsername = "add_to_dom";
@@ -95,7 +94,7 @@ $('#userForm').submit(function(event){
 $(document).on('click', 'tr', function(){
     // Get the textarea target and clear it if we find it
     const textarea = $('#compSix');
-    if(textarea === 'undefined')
+    if(!textarea.length)
         return;
     textarea.empty();
 
